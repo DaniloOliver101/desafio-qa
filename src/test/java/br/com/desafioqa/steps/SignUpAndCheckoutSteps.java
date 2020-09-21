@@ -6,9 +6,7 @@ import br.com.desafioqa.pages.AutomationPage;
 import br.com.desafioqa.pages.CommonPage;
 import br.com.desafioqa.pages.SignInPage;
 import br.com.desafioqa.pages.SignUpPage;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
+import io.cucumber.java.*;
 import io.cucumber.java.bs.A;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -16,15 +14,19 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.cucumber.java.ro.Si;
 import org.junit.Assert;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriverException;
 
 import java.util.concurrent.TimeUnit;
 
-public class MyStepdefs {
+public class SignUpAndCheckoutSteps {
     static Driver driver;
     static CommonPage commonPage;
     static SignUpPage signUpPage;
     static SignInPage signInPage;
     static DataGenerator data = new DataGenerator();
+    private static Scenario myScenario;
 
     @Before
     public static void setUp() {
@@ -32,11 +34,29 @@ public class MyStepdefs {
         signInPage = new SignInPage(driver);
         commonPage = new CommonPage(driver);
         signUpPage = new SignUpPage(driver);
+
+    }
+    @Before()
+    public void setUp(Scenario scenario){
+        myScenario = scenario;
+    }
+
+    @AfterStep
+    public static void afterStep(){
+        try {
+            myScenario.write("Current Page URL is " + driver.getDriver().getCurrentUrl());
+            byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+            myScenario.embed(screenshot, "image/png");  // Stick it in the report
+        } catch (WebDriverException webDriverException) {
+            webDriverException.printStackTrace();
+        } catch (ClassCastException cce) {
+            cce.printStackTrace();
+        }
     }
 
     @After
     public void after() {
-//        driver.quit();
+        driver.quit();
     }
 
 
@@ -124,5 +144,16 @@ public class MyStepdefs {
     @And("add item to cart")
     public void addItemToCart() {
         commonPage.addItemToCart();
+    }
+
+    @And("I Proceed to Checkout")
+    public void iProceedToCheckout() {
+        commonPage.proceedToCheckout();
+    }
+
+    @And("I Confirm Order on History")
+    public void iConfirmOrderOnHistory() {
+        commonPage.personalInfo();
+        Assert.assertEquals(commonPage.orderStatus().getText(), "On backorder");
     }
 }

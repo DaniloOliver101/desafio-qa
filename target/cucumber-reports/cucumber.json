@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5134000000,
+              "duration": 4492000000,
               "status": "passed"
             },
             "line": 4,
@@ -25,11 +25,25 @@
               ],
               "location": "br.com.desafioqa.steps.MyStepdefs.iAccessThePage(java.lang.String)"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php"
+                ],
+                "result": {
+                  "duration": 4000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2739000000,
+              "duration": 3013000000,
               "status": "passed"
             },
             "line": 5,
@@ -37,20 +51,42 @@
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.clickOnSignIn()"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?controller\u003dauthentication\u0026back\u003dmy-account"
+                ],
+                "result": {
+                  "duration": 4000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-09-21T07:53:04.009Z",
+        "start_timestamp": "2020-09-21T09:19:07.315Z",
         "before": [
           {
             "result": {
-              "duration": 6028000000,
+              "duration": 5894000000,
               "status": "passed"
             },
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.setUp()"
+            }
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.setUp(io.cucumber.java.Scenario)"
             }
           }
         ],
@@ -61,6 +97,7 @@
         "after": [
           {
             "result": {
+              "duration": 892000000,
               "status": "passed"
             },
             "match": {
@@ -73,7 +110,7 @@
         "steps": [
           {
             "result": {
-              "duration": 90000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 17,
@@ -81,11 +118,25 @@
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.iFillEmailToCreateAccount()"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?controller\u003dauthentication\u0026back\u003dmy-account"
+                ],
+                "result": {
+                  "duration": 4000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 272000000,
+              "duration": 278000000,
               "status": "passed"
             },
             "line": 18,
@@ -93,11 +144,25 @@
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.iClickOnButtonCreateAccount()"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?controller\u003dauthentication\u0026back\u003dmy-account"
+                ],
+                "result": {
+                  "duration": 15000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5882000000,
+              "duration": 6049000000,
               "status": "passed"
             },
             "line": 19,
@@ -105,11 +170,25 @@
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.iFillAllDataOnForm()"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?controller\u003dauthentication\u0026back\u003dmy-account#account-creation"
+                ],
+                "result": {
+                  "duration": 6000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1596000000,
+              "duration": 2528000000,
               "status": "passed"
             },
             "line": 20,
@@ -117,11 +196,24 @@
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.iSubmitTheForm()"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?controller\u003dmy-account"
+                ],
+                "result": {
+                  "duration": 4000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 21,
@@ -129,11 +221,25 @@
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.accountHasBeenCreatedWithSuccess()"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?controller\u003dmy-account"
+                ],
+                "result": {
+                  "duration": 4000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1488000000,
+              "duration": 1773000000,
               "status": "passed"
             },
             "line": 22,
@@ -141,11 +247,25 @@
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.iClickOnTSHIRTMenuCategory()"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?id_category\u003d5\u0026controller\u003dcategory"
+                ],
+                "result": {
+                  "duration": 6000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1982000000,
+              "duration": 2199000000,
               "status": "passed"
             },
             "line": 23,
@@ -153,6 +273,72 @@
             "match": {
               "location": "br.com.desafioqa.steps.MyStepdefs.addItemToCart()"
             },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?id_product\u003d1\u0026controller\u003dproduct"
+                ],
+                "result": {
+                  "duration": 8000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10262000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I Proceed to Checkout",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.iProceedToCheckout()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?controller\u003dorder-confirmation\u0026id_cart\u003d2203326\u0026id_module\u003d3\u0026id_order\u003d239096\u0026key\u003d039b1efcce23bb5c99203818eb61db56"
+                ],
+                "result": {
+                  "duration": 5000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3197000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I Confirm Order on History",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.iConfirmOrderOnHistory()"
+            },
+            "after": [
+              {
+                "output": [
+                  "Current Page URL is http://automationpractice.com/index.php?controller\u003dhistory"
+                ],
+                "result": {
+                  "duration": 4000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "br.com.desafioqa.steps.MyStepdefs.afterStep()"
+                }
+              }
+            ],
             "keyword": "And "
           }
         ],

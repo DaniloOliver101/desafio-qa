@@ -1,3 +1,16 @@
+# Passo a Passo para executar o projeto
+
+- Basta importar o projeto para uma IDE Java - Eclipse ou IntelliJ
+
+- Fazer o download das dependências do Projeto (Maven)
+
+- Executar a classe Runner.java no package abaixo
+br.com.desafioqa.core.Runner.java
+
+- Na máquina devem estar configuradas as propriedades do Java e Selenium. 
+
+
+
 # Desafio QA
 
 Este desafio tem o intuito de avaliar suas habilidades na engenharia da qualidade de software.

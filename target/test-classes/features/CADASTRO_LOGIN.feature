@@ -21,3 +21,5 @@ Feature: Create Account and Sign in
     Then account has been created with success
     Given I click on T-SHIRT Menu Category
     And add item to cart
+    And I Proceed to Checkout
+    And  I Confirm Order on History
