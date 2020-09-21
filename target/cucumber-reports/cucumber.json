@@ -1,0 +1,173 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Access Home Page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5134000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I Access the page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://automationpractice.com/index.php\"",
+                  "offset": 18
+                }
+              ],
+              "location": "br.com.desafioqa.steps.MyStepdefs.iAccessThePage(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2739000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "click on Sign In",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.clickOnSignIn()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-21T07:53:04.009Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6028000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Create account And Complete Purchase",
+        "description": "",
+        "id": "create-account-and-sign-in;create-account-and-complete-purchase",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I fill email to create account",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.iFillEmailToCreateAccount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 272000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on Button Create Account",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.iClickOnButtonCreateAccount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5882000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I fill all data on form",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.iFillAllDataOnForm()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1596000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I submit the form",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.iSubmitTheForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "account has been created with success",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.accountHasBeenCreatedWithSuccess()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1488000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on T-SHIRT Menu Category",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.iClickOnTSHIRTMenuCategory()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1982000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "add item to cart",
+            "match": {
+              "location": "br.com.desafioqa.steps.MyStepdefs.addItemToCart()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TEST"
+          }
+        ]
+      }
+    ],
+    "name": "Create Account and Sign in",
+    "description": "",
+    "id": "create-account-and-sign-in",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CADASTRO_LOGIN.feature",
+    "tags": []
+  }
+]
